@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Book Store</h1>
+        <nav>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="#" id="logout-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="book-list">
+            <article class="book-item">
+                <h2>Book Title 1</h2>
+                <p>Author: Author Name</p>
+                <p>Price: $10.00</p>
+                <button onclick="addToCart('Book Title 1', 10.00)">Add to Cart</button>
+            </article>
+            <article class="book-item">
+                <h2>Book Title 2</h2>
+                <p>Author: Author Name</p>
+                <p>Price: $15.00</p>
+                <button onclick="addToCart('Book Title 2', 15.00)">Add to Cart</button>
+            </article>
+            <!-- Add more book items here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Store</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
